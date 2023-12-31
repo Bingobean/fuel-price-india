@@ -17,7 +17,7 @@ Your Flask application is now available at `http://localhost:5000.`
 
 ## Endpoints:
 
-Deployment Base URL - `https://fuelinr.vercel.app/`
+Deployment Base URL - [`https://fuelinr.vercel.app/`](https://fuelinr.vercel.app/)
 
 - Method: GET - `/states`
 
