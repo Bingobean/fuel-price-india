@@ -6,7 +6,7 @@ This API is created using python.
 
 ## Installation (to run locally):
 
-Clone the repo and run,
+Clone the repo and install dependencies from `requirements.txt` and run using,
 
 ```
 python -m flask run --port=5000
