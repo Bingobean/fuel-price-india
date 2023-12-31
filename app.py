@@ -193,16 +193,16 @@ def cityWisePrice(city, inpType):
             "message":f"Error retrieving data: {e}"
         }, 503
 
-@app.errorhandler(500)
+@app.errorhandler(404)
 def internal_server_error_404(e):
     response = {
         "message":f"The page you are looking for does not exist 😰",
         "redirect":f"https://fuelinr.vercel.app/"
     }
     print(f"Error in server - 404 :{e}")
-    return response, 500
+    return response, 404
 
-@app.errorhandler(404)
-def internal_server_error500(e):
+@app.errorhandler(500)
+def internal_server_error_500(e):
     print(f"Error in server - 500 :{e}")
-    return render_template('500.html'), 404
+    return render_template('500.html'), 500
